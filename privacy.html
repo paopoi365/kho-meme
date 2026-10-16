@@ -16,7 +16,7 @@
 </head>
 <body><main>
 <h1>MMO Post Scheduler – Privacy Policy</h1>
-<p class="muted">Last updated: 2026-10-15 · <a href="#vi">Tiếng Việt bên dưới</a></p>
+<p class="muted">Last updated: 2026-10-16 · <a href="#vi">Tiếng Việt bên dưới</a></p>
 
 <h2>1. Who we are and who uses the app</h2>
 <p>MMO Post Scheduler is a private tool operated by its owner to schedule and publish posts on the owner's own Threads accounts through the official Threads API. It is not offered to the public; the only people who authorize it are the owner's own Threads accounts. Contact: <a href="mailto:ttam.anhduong368@gmail.com">ttam.anhduong368@gmail.com</a>.</p>
@@ -26,6 +26,7 @@
 <li>Profile basics (account ID, username, display name, profile picture) to identify which account is posting.</li>
 <li>Access tokens, stored only on the owner's computer, encrypted with Windows DPAPI. Tokens are never written to logs and never sent to third parties.</li>
 <li>The account's own posts, replies and post insights (views, likes, replies, link clicks), used to schedule posts, check results and improve future posts.</li>
+<li><strong>Comments that other people leave under the owner's own posts</strong>: the app reads them to reply from the owner's account. To draft a reply, the comment text and the owner's post text (never the commenter's username) are sent to an AI text service. The app keeps only the comment ID, a 60-character excerpt and the reply status for up to <strong>30 days</strong> so it never replies twice. Spam, abusive or medical/legal/financial questions are skipped. The app never comments on other people's posts.</li>
 </ul>
 
 <h2>3. Public posts found through keyword search</h2>
@@ -39,7 +40,7 @@
 
 <h2>4. Third-party processing</h2>
 <ul>
-<li><strong>AI text services</strong> (Google Gemini API; xAI Grok through the vibi.top gateway as a backup) receive prompts to draft posts or analyze writing style. Prompts may contain public post text without usernames or links; they never contain access tokens. These providers process data under their own terms; Google's free tier may use submitted data to improve its products.</li>
+<li><strong>AI text services</strong> (OpenAI models and xAI Grok through the vibi.top gateway; Google Gemini API) receive prompts to draft posts, draft replies to comments or analyze writing style. Prompts may contain public post text without usernames or links; they never contain access tokens. These providers process data under their own terms; Google's free tier may use submitted data to improve its products.</li>
 <li><strong>GitHub Pages</strong> hosts images that the owner chooses to attach to posts, so that Threads can fetch them. These images are public.</li>
 <li>Meta processes data as the operator of Threads.</li>
 </ul>
@@ -54,7 +55,7 @@
 <hr id="vi">
 
 <h1>Chính sách quyền riêng tư – MMO Post Scheduler</h1>
-<p class="muted">Cập nhật: 2026-10-15</p>
+<p class="muted">Cập nhật: 2026-10-16</p>
 
 <h2>1. Chúng tôi là ai, ai dùng ứng dụng</h2>
 <p>MMO Post Scheduler là công cụ riêng do chủ sở hữu vận hành để lên lịch và đăng bài trên chính các tài khoản Threads của mình qua Threads API chính thức. Ứng dụng không cung cấp cho công chúng; chỉ các tài khoản Threads của chủ sở hữu cấp quyền cho ứng dụng. Liên hệ: <a href="mailto:ttam.anhduong368@gmail.com">ttam.anhduong368@gmail.com</a>.</p>
@@ -66,6 +67,8 @@
 <li>Bài viết, phản hồi và số liệu bài viết (lượt xem, thích, trả lời, bấm link) của chính tài khoản đó, để lên lịch, theo dõi kết quả và cải thiện bài sau.</li>
 </ul>
 
+<h2>Bình luận dưới bài của chủ sở hữu</h2>
+<p>Ứng dụng đọc bình luận người khác để lại dưới <strong>chính bài của chủ sở hữu</strong> để trả lời từ tài khoản chủ sở hữu. Để viết câu trả lời, văn bản bình luận và văn bản bài (không bao giờ kèm tên người bình luận) được gửi tới dịch vụ AI. Ứng dụng chỉ lưu mã bình luận, 60 ký tự đầu và trạng thái trả lời tối đa <strong>30 ngày</strong> để không trả lời hai lần. Bình luận spam, xúc phạm hoặc hỏi chuyện y tế/luật/tài chính được bỏ qua. Ứng dụng không bình luận vào bài của người khác.</p>
 <h2>3. Bài công khai tìm qua từ khóa</h2>
 <p>Với quyền <code>threads_keyword_search</code>, ứng dụng tìm bài công khai theo chủ đề chung (ví dụ "đi làm", "tiết kiệm") để hiểu phong cách viết ở dạng tổng hợp.</p>
 <ul>
@@ -77,7 +80,7 @@
 
 <h2>4. Bên thứ ba xử lý dữ liệu</h2>
 <ul>
-<li><strong>Dịch vụ AI</strong> (Google Gemini API; xAI Grok qua cổng vibi.top làm dự phòng) nhận prompt để viết bài nháp hoặc phân tích phong cách. Prompt có thể chứa văn bản bài công khai nhưng không có tên người dùng, đường link hay access token. Gói miễn phí của Google có thể dùng dữ liệu gửi lên để cải thiện sản phẩm.</li>
+<li><strong>Dịch vụ AI</strong> (model OpenAI và xAI Grok qua cổng vibi.top; Google Gemini API) nhận prompt để viết bài nháp, viết câu trả lời bình luận hoặc phân tích phong cách. Prompt có thể chứa văn bản bài công khai nhưng không có tên người dùng, đường link hay access token. Gói miễn phí của Google có thể dùng dữ liệu gửi lên để cải thiện sản phẩm.</li>
 <li><strong>GitHub Pages</strong> lưu ảnh chủ sở hữu chọn đăng kèm bài để Threads tải được; các ảnh này công khai.</li>
 <li>Meta xử lý dữ liệu với vai trò đơn vị vận hành Threads.</li>
 </ul>
