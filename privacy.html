@@ -26,7 +26,7 @@
 <li>Profile basics (account ID, username, display name, profile picture) to identify which account is posting.</li>
 <li>Access tokens, stored only on the owner's computer, encrypted with Windows DPAPI. Tokens are never written to logs and never sent to third parties.</li>
 <li>The account's own posts, replies and post insights (views, likes, replies, link clicks), used to schedule posts, check results and improve future posts.</li>
-<li><strong>Comments that other people leave under the owner's own posts</strong>: the app reads them to reply from the owner's account. To draft a reply, the comment text and the owner's post text (never the commenter's username) are sent to an AI text service. The app keeps only the comment ID, a 60-character excerpt and the reply status for up to <strong>30 days</strong> so it never replies twice. Spam, abusive or medical/legal/financial questions are skipped. The app never comments on other people's posts.</li>
+<li><strong>Comments that other people leave under the owner's own posts</strong>: the app reads them to reply from the owner's account. To draft a reply, the comment text and the owner's post text (never the commenter's username) are sent to an AI text service. The app keeps only the comment ID, a 60-character excerpt and the reply status for up to <strong>30 days</strong> so it never replies twice. Spam, abusive or medical/legal/financial questions are skipped; clear scam / gambling / follow-for-follow / adult spam under the owner's posts may be hidden automatically. The app never comments on other people's posts.</li>
 </ul>
 
 <h2>3. Public posts found through keyword search</h2>
@@ -68,7 +68,7 @@
 </ul>
 
 <h2>Bình luận dưới bài của chủ sở hữu</h2>
-<p>Ứng dụng đọc bình luận người khác để lại dưới <strong>chính bài của chủ sở hữu</strong> để trả lời từ tài khoản chủ sở hữu. Để viết câu trả lời, văn bản bình luận và văn bản bài (không bao giờ kèm tên người bình luận) được gửi tới dịch vụ AI. Ứng dụng chỉ lưu mã bình luận, 60 ký tự đầu và trạng thái trả lời tối đa <strong>30 ngày</strong> để không trả lời hai lần. Bình luận spam, xúc phạm hoặc hỏi chuyện y tế/luật/tài chính được bỏ qua. Ứng dụng không bình luận vào bài của người khác.</p>
+<p>Ứng dụng đọc bình luận người khác để lại dưới <strong>chính bài của chủ sở hữu</strong> để trả lời từ tài khoản chủ sở hữu. Để viết câu trả lời, văn bản bình luận và văn bản bài (không bao giờ kèm tên người bình luận) được gửi tới dịch vụ AI. Ứng dụng chỉ lưu mã bình luận, 60 ký tự đầu và trạng thái trả lời tối đa <strong>30 ngày</strong> để không trả lời hai lần. Bình luận spam, xúc phạm hoặc hỏi chuyện y tế/luật/tài chính được bỏ qua; bình luận lừa đảo / cờ bạc / follow chéo / 18+ rõ ràng dưới bài của chủ sở hữu có thể bị tự động ẩn. Ứng dụng không bình luận vào bài của người khác.</p>
 <h2>3. Bài công khai tìm qua từ khóa</h2>
 <p>Với quyền <code>threads_keyword_search</code>, ứng dụng tìm bài công khai theo chủ đề chung (ví dụ "đi làm", "tiết kiệm") để hiểu phong cách viết ở dạng tổng hợp.</p>
 <ul>
